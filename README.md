@@ -20,7 +20,7 @@ This behavior can be controlled by two environment variables:
   Allowed values: Any regular expression (ECMAScript/JavaScript syntax),
   defaults to `kwallet`.
 * `CHROMIUM_EXE_PATH` - Set the path to the Chromium / Google Chrome executable.
-
+*  REUSE_XVFB - Default - start a new Xvfb for each process Set REUSE_XVFB=true to reuse screen :99
 Any webpage that is loaded using run-headless-chromium can close Chromium and exit the process
 by sending the magic string `console.log("All tests completed!");`.
 Insert an integer at the end of the string to change the exit code of this program from 0 to
